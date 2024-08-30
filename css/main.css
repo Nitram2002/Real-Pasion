@@ -1787,11 +1787,11 @@ address { font-style: italic; }
 	margin:15px 0;
 }
 .tg-upcomingmatch-counter figure img{
-	max-width:none;
-	width:none;
+	width:900px;
 	display:block;
 	margin:-0 0 0 -265px;
 }
+
 .tg-upcomingmatch-counter .tg-contentbox{
 	color:#fff;
 	padding:80px 0;

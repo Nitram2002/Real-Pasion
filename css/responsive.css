@@ -29,6 +29,10 @@
 		font-size: 120px;
 		line-height: 106px;
 	}
+
+	.tg-haslayout .container .row .tg-upcomingmatch-counte .col-md-4 figure img {
+		width: 500px;
+	}
 }
 @media (max-width:1199px){
 	.tg-cartcontent{
