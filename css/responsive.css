@@ -8,7 +8,7 @@
 	body.tg-comming-soon .tg-main {padding: 12% 3%;}
 }
 
-@media (max-height: 700px) {
+@media (max-height: 546px) {
 	#tg-home-slider .swiper-wrapper .swiper-slide .container .floating .jugador {
 		height: 80%;
 		max-width: 10%;
