@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Michroma", sans-serif;
+  height: 100vh;
+}
+
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #171f53;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+  z-index: 10000;
+}
+
+#svg {
+  height: 450px;
+  width: 450px;
+  stroke: orangered;
+  fill-opacity: 0;
+  stroke-width: 10px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: orangered;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+header nav {
+  background-color: #171f53;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 10px 10px 20px 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
