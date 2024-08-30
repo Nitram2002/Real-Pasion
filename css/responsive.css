@@ -9,8 +9,9 @@
 }
 
 @media (max-height: 546px) {
-	#tg-home-slider .swiper-wrapper .swiper-slide .container .floating img {
+	#tg-home-slider .swiper-wrapper .swiper-slide .container .floating .jugador {
 		height: 80%;
+		max-width: 10%;
 	}
 }
 
