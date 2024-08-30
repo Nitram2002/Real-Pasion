@@ -1428,6 +1428,7 @@ address { font-style: italic; }
 	height:2px;
 	content:'';
 	position:absolute;
+	list-style: none;
 }
 .tg-navigation ul li a{
 	color:#fff;
@@ -1787,7 +1788,7 @@ address { font-style: italic; }
 	margin:15px 0;
 }
 .tg-upcomingmatch-counter figure img{
-	max-width:none;
+	max-width:500px;
 	width:none;
 	display:block;
 	margin:-0 0 0 -265px;
@@ -2443,7 +2444,7 @@ address { font-style: italic; }
 	height:100%;
 	content:'';
 	position:absolute;
-	background:rgba(55, 53, 66, 0.80);
+	background:#171f53;
 }
 .tg-footerinfo{
 	width:100%;
