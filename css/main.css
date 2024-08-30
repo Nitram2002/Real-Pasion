@@ -1428,7 +1428,6 @@ address { font-style: italic; }
 	height:2px;
 	content:'';
 	position:absolute;
-	list-style: none;
 }
 .tg-navigation ul li a{
 	color:#fff;
