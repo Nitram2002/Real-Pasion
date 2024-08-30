@@ -1787,7 +1787,7 @@ address { font-style: italic; }
 	margin:15px 0;
 }
 .tg-upcomingmatch-counter figure img{
-	max-width:500px;
+	max-width:none;
 	width:none;
 	display:block;
 	margin:-0 0 0 -265px;
@@ -2443,7 +2443,7 @@ address { font-style: italic; }
 	height:100%;
 	content:'';
 	position:absolute;
-	background:#171f53;
+	background:rgba(55, 53, 66, 0.80);
 }
 .tg-footerinfo{
 	width:100%;
