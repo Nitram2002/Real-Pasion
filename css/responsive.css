@@ -131,6 +131,10 @@
 		font-size:250px;
 		line-height:225px;
 	}
+
+	#tg-home-slider .swiper-wrapper .swiper-slide .container .floating img {
+		height: 80%;
+	}
 }
 @media (max-width:991px){
 	.tg-logo {
