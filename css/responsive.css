@@ -7,6 +7,13 @@
 @media (max-width:1366px){
 	body.tg-comming-soon .tg-main {padding: 12% 3%;}
 }
+
+@media (max-height:823) {
+	#tg-home-slider .swiper-wrapper .swiper-slide .container .floating img {
+		height: 80%;
+	}
+}
+
 @media (max-width:1280px){
 	.tg-navigation .tg-colhalf:last-child ul li:last-child ul{
 		left:auto;
@@ -132,9 +139,7 @@
 		line-height:225px;
 	}
 
-	#tg-home-slider .swiper-wrapper .swiper-slide .container .floating img {
-		height: 80%;
-	}
+	
 }
 @media (max-width:991px){
 	.tg-logo {
