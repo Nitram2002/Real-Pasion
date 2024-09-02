@@ -484,6 +484,7 @@ address { font-style: italic; }
 	vertical-align: middle;
 }
 .tg-section-name{
+	width: 550px;
 	top:0;
 	left:15px;
 	z-index:1;
@@ -500,6 +501,26 @@ address { font-style: italic; }
 	-o-transform-origin: 20px 20px;
 	transform-origin: 20px 20px;
 }
+
+.tg-section-name2{
+	width: 550px;
+	top:0;
+	left: 1250px;
+	z-index:1;
+	position:absolute;
+	border-bottom:2px solid #171f53;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transform-origin: 20px 20px;
+	-moz-transform-origin: 20px 20px;
+	-ms-transform-origin: 20px 20px;
+	-o-transform-origin: 20px 20px;
+	transform-origin: 20px 20px;
+}
+
 .tg-section-name:after{
 	bottom:-2px;
 	right:100%;
@@ -510,6 +531,18 @@ address { font-style: italic; }
 	background:#171f53;
 	position:absolute;
 }
+
+.tg-section-name2:after{
+	bottom:-2px;
+	right:100%;
+	content:'';
+	width:510px;
+	height:2px;
+	z-index:-1;
+	background:#171f53;
+	position:absolute;
+}
+
 .tg-section-name h2{
 	width:100%;
 	float:left;
@@ -517,6 +550,15 @@ address { font-style: italic; }
 	font-size:18px;
 	line-height:18px;
 }
+
+.tg-section-name2 h2{
+	width:100%;
+	float:left;
+	margin:0 -350px 20px;
+	font-size:18px;
+	line-height:18px;
+}
+
 .tg-section-heading{
 	width:100%;
 	float:left;
@@ -584,14 +626,6 @@ address { font-style: italic; }
 }
 .floating{
 	float: left;
-	-webkit-animation-name: Floatingx;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-moz-animation-name: Floating;
-	-moz-animation-duration: 3s;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: ease-in-out;
 	margin-left: 30px;
 	margin-top: 5px;
 }
@@ -2433,7 +2467,7 @@ address { font-style: italic; }
 .tg-footerinfobox .tg-bgboxone:before{ display:none;}
 .tg-footerinfobox .tg-bgboxtwo{
 	width:38.2%;
-	background:url(../images/bg-footer.jpg);
+	background:url(/css/images/logo-pag.png);
 	background-size:cover;
 }
 .tg-footerinfobox .tg-bgboxtwo:after{
@@ -2443,7 +2477,7 @@ address { font-style: italic; }
 	height:100%;
 	content:'';
 	position:absolute;
-	background:rgba(55, 53, 66, 0.80);
+	background:rgba(23, 31, 83, 0.8);
 }
 .tg-footerinfo{
 	width:100%;
