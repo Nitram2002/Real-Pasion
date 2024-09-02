@@ -2468,7 +2468,7 @@ address { font-style: italic; }
 .tg-footerinfobox .tg-bgboxone:before{ display:none;}
 .tg-footerinfobox .tg-bgboxtwo{
 	width:38.2%;
-	background:url(/css/images/logo-pag.svg);
+	background:url(../css/images/logo-pag.svg);
 	background-size:cover;
 }
 .tg-footerinfobox .tg-bgboxtwo:after{
