@@ -1465,7 +1465,7 @@ address { font-style: italic; }
 }
 .tg-navigation ul li a{
 	color:#fff;
-	line-height:16px;
+	line-height:26px;
 }
 .tg-navigation ul li ul{
 	top:120%;
@@ -1481,7 +1481,7 @@ address { font-style: italic; }
 	padding:0;
 }
 .tg-navigation ul li ul li a{
-	padding:15px 30px;
+	padding:5px 20px;
 	display:block;
 	position:relative;
 }
@@ -1821,9 +1821,9 @@ address { font-style: italic; }
 	margin:15px 0;
 }
 .tg-upcomingmatch-counter figure img{
-	width:900px;
-	display:block;
-	margin:-0 0 0 -265px;
+	width: 1100px;
+	display: block;
+	margin: 50px 50px 0;
 }
 
 .tg-upcomingmatch-counter .tg-contentbox{
@@ -2336,7 +2336,7 @@ address { font-style: italic; }
 	max-width:none;
 	width:none;
 	display:block;
-	margin:0;
+	margin: 40px 0 0;
 	max-height: 450px;
 }
 .tg-pointstable{
