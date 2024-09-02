@@ -118,9 +118,9 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
 	outline: none;
-	color: #666;
+	color: #000;
 	height: 50px;
-	background:#fff;
+	background:#808080b5;
 	font-size: 14px;
 	line-height: 20px;
 	padding: 15px 20px;
@@ -739,6 +739,7 @@ address { font-style: italic; }
 	padding: 0;
 	z-index:2;
 	margin:0;
+	top: 22px;
 	list-style: none;
 	text-align: right;
 	position:relative;
@@ -1705,7 +1706,7 @@ address { font-style: italic; }
 }
 .tg-pagetitle h1{
 	margin:0;
-	color:#55545d;
+	color:#f15b5a;
 	position:relative;
 	font:100px/93px 'Oswald', Arial, Helvetica, sans-serif;
 }
@@ -1716,9 +1717,9 @@ address { font-style: italic; }
 	width:100%;
 	height:100%;
 	position:absolute;
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(56,54,67,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(56,54,67,1) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(56,54,67,1) 100%);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 40%, rgba(240, 254, 51, 0.447) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 40%,rgba(241, 254, 51,0.447) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 40%,rgba(241, 254, 51,0.447) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#383643',GradientType=0 );
 }
 /*=============================================
@@ -3556,7 +3557,7 @@ address { font-style: italic; }
 .tg-commentform input{
 	height:70px;
 	line-height:68px;
-	border-color:#ddd;
+	border-color:#000;
 }
 .tg-commentform textarea{
 	width:100%;
