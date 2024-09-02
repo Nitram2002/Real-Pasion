@@ -272,7 +272,7 @@
 		margin:0 auto;
 	}
 	.tg-productsliderbox{ padding:0 0 50px;}
-	.tg-themetabnav{ width:510px;}
+	.tg-themetabnav{ width:610px;}
 	.tg-themetabs .tg-detail{width:100%;}
 	.tg-404{margin:0 0 50px;}
 	.tg-comming-sooncounter{margin:0 0 80px;}
@@ -585,9 +585,9 @@
 		line-height:105px;
 	}
 	.tg-pagetitle h1:after{
-		background: -moz-linear-gradient(top, rgba(255,255,255,0) 40%, rgba(56,54,67,1) 75%);
-		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 40%,rgba(56,54,67,1) 75%);
-		background: linear-gradient(to bottom, rgba(255,255,255,0) 40%,rgba(56,54,67,1) 75%);
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 40%, rgba(240, 254, 51, 0.447) 75%);
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 40%,rgba(240, 254, 51, 0.447) 75%);
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 40%,rgba(240, 254, 51, 0.447) 75%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#383643',GradientType=0 );
 	}
 	.tg-banner{
