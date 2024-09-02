@@ -1322,7 +1322,7 @@ address { font-style: italic; }
 	float:left;
 	padding:20px 30px !important;
 }
-.tg-cartcontent ul li:nth-child(even){background:#302e39;}
+.tg-cartcontent ul li:nth-child(even){background:#171f53;}
 .tg-cartcontent ul li figure{
 	float:left;
 	margin:0;
