@@ -606,6 +606,31 @@
 		height: 300px;
 		padding:170px 0 0;
 	}
+
+	.tg-modalbox.fade .modal-dialog {
+        width: 90%; /* Ajusta el ancho del modal en pantallas pequeñas */
+        top: 5%;
+        left: 5%;
+        margin: 0;
+        border-top: none;
+    }
+    .tg-modal-content {
+        float: none; /* Elimina el flotado para el contenido del modal */
+    }
+    .tg-logintype,
+    .tg-modal-content .tg-formarea {
+        width: 100%; /* Asegura que ambos contenedores ocupen el 100% del ancho */
+        float: none; /* Elimina el flotado para los contenedores */
+        padding: 15px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+    .tg-logintype {
+        background: #f7f7f7; /* Asegura que el fondo sea visible */
+        padding: 15px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+    .tg-logintype ul li {
+        line-height: 40px; /* Ajusta la altura de línea para mejor visibilidad en pantallas pequeñas */
+    }
+}
 }
 @media (max-width:720px){}
 @media (max-width:640px){
@@ -885,6 +910,17 @@
 		padding: 0;
 		text-align: center;
 	}
+
+	.tg-modalbox.fade .modal-dialog {
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        border-top: none;
+    }
+    .tg-logintype ul li {
+        font-size: 12px; /* Reduce el tamaño de fuente en pantallas muy pequeñas */
+    }
 }
 @media (max-width:479px){
 	.tg-testimonial-slider .swiper-slide .tg-contentbox h2 {
