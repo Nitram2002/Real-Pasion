@@ -41,14 +41,29 @@ $(document).ready(function() {
 	/* -------------------------------------
 			COLLAPSE MENU SMALL DEVICES
 	-------------------------------------- */
-	function collapseMenu(){
+	function collapseMenu() {
+		// Agregar la flecha de dropdown en los elementos con submenú
 		jQuery('#tg-navigationm-mobile .menu-item-has-children').prepend('<span class="tg-dropdowarrow"><i class="fa fa-angle-down"></i></span>');
+	
+		// Al hacer clic en la flecha, se despliega o colapsa el submenú
 		jQuery('#tg-navigationm-mobile .menu-item-has-children span').on('click', function() {
-			jQuery(this).next().next().slideToggle(300);
-			jQuery(this).parent('#tg-navigationm-mobile .menu-item-has-children').toggleClass('tg-open');
+			jQuery(this).next().next().slideToggle(300); // Muestra/oculta el submenú
+			jQuery(this).parent('.menu-item-has-children').toggleClass('tg-open'); // Agrega o quita la clase tg-open
+		});
+	
+		// Enlace para cerrar todos los submenús
+		jQuery('#closeMenuLink').on('click', function(event) {
+			event.preventDefault(); // Evita que el enlace navegue
+			// Colapsa todos los submenús abiertos
+			jQuery('#tg-navigationm-mobile .menu-item-has-children .sub-menu').slideUp(300); 
+			// Remueve la clase tg-open de todos los elementos
+			jQuery('#tg-navigationm-mobile .menu-item-has-children').removeClass('tg-open');
 		});
 	}
+	
 	collapseMenu();
+	
+	
 	/*------------------------------------------
 			SLIDER BACKGROUND MOVE
 	------------------------------------------*/
