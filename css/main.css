@@ -969,7 +969,7 @@ address { font-style: italic; }
 	height:auto !important;
 	font:400 14px/14px 'Open Sans', Arial, Helvetica, sans-serif;
 }
-.tg-price-range p input{width:80px !important;}
+.tg-price-range p input{width:180px !important;}
 .tg-price-range .tg-btn{
 	float:right;
 	width:80px;

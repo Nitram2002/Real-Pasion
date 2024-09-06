@@ -118,3 +118,51 @@ header nav ul li a:hover {
   font-size: 30px;
   cursor: pointer;
 }
+
+
+.tg-buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: 2px solid #2440fb; /* Borde azul */
+  background-color: white; /* Fondo blanco */
+  color: #2440fb; /* Texto azul */
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tg-buttons button:hover {
+  background-color: #2440fb; /* Fondo azul en hover */
+  color: white; /* Texto blanco en hover */
+}
+
+.tg-buttons .tg-colorone,
+.tg-buttons .tg-colortwo,
+.tg-buttons .tg-colorthree,
+.tg-buttons .tg-colorfour,
+.tg-buttons .tg-colorfive {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #2440fb; /* Cambia el color del borde si es necesario */
+  background-color: white;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tg-buttons .tg-colorone { background-color: #ff0000; } /* Color rojo */
+.tg-buttons .tg-colortwo { background-color: #00ff00; } /* Color verde */
+.tg-buttons .tg-colorthree { background-color: #0000ff; } /* Color azul */
+.tg-buttons .tg-colorfour { background-color: #ffff00; } /* Color amarillo */
+.tg-buttons .tg-colorfive { background-color: #ff00ff; } /* Color morado */
+
+.tg-buttons .tg-colorone:hover,
+.tg-buttons .tg-colortwo:hover,
+.tg-buttons .tg-colorthree:hover,
+.tg-buttons .tg-colorfour:hover,
+.tg-buttons .tg-colorfive:hover {
+  border-color: #fd460a; /* Cambia el borde al pasar sobre el botón de color */
+}

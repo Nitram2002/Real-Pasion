@@ -142,9 +142,9 @@ $(document).ready(function() {
 	$(function() {
 		$("#tg-slider-range").slider({
 			range: true,
-			min: 0,
-			max: 500,
-			values: [ 75, 300 ],
+			min: 50000,
+			max: 800000,
+			values: [ 50000, 100000 ],
 			slide: function( event, ui ) {
 				$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
 			}

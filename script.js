@@ -79,3 +79,31 @@ function cerrarVentana() {
   document.getElementById('miVentana').style.display = 'none';
 }
 
+let selectedColor = '0'; // Default color index
+
+    function selectColor(colorIndex) {
+        selectedColor = colorIndex;
+        updateImage(); // Update image based on selected size and color
+    }
+
+    function updateImage(size) {
+        const image = document.getElementById('productImage');
+        let sizeSuffix = '';
+
+        // Determine size suffix
+        if (size === 'small') {
+            sizeSuffix = '-0';
+        } else if (size === 'medium') {
+            sizeSuffix = '-1';
+        } else if (size === 'large') {
+            sizeSuffix = '-2';
+        } else if (size === 'xlarge') {
+            sizeSuffix = '-3';
+        } else {
+            sizeSuffix = ''; // Default size
+        }
+
+        // Update image source based on selected color and size
+        image.src = `../images/tienda/balones/balon-adidas-coleccion-modelo-euro24-${selectedColor}${sizeSuffix}.webp`;
+    }
+
