@@ -63,3 +63,19 @@ document.querySelectorAll(".redirectButton").forEach(button => {
     redirectWithAnimation(targetUrl);
   });
 });
+
+
+window.onload = function() {
+  setTimeout(function() {
+      mostrarVentana();
+  }, 5000); // 5000 milisegundos = 5 segundos
+};
+
+function mostrarVentana() {
+  document.getElementById('miVentana').style.display = 'block';
+}
+
+function cerrarVentana() {
+  document.getElementById('miVentana').style.display = 'none';
+}
+
