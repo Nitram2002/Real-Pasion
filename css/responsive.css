@@ -301,6 +301,10 @@
 	.tg-home-slider .swiper-slide figure {padding: 0 32%;}
 }
 @media (max-width:767px){
+	.ventana-emergente {
+        display: none !important;
+    }
+
 	.tg-btnnav {
 		left: 15px;
 		top: 15px;
