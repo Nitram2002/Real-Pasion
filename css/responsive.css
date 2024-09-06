@@ -35,6 +35,10 @@
 	}
 }
 @media (max-width:1199px){
+	.contenido-ventana {
+		width: 70%;
+	}
+
 	.tg-cartcontent{
 		left:auto;
 		right:0;
@@ -147,6 +151,10 @@
 	
 }
 @media (max-width:991px){
+	.contenido-ventana {
+		width: 70%;
+	}
+
 	.tg-logo {
 		width: 70px;
 		height:auto;
