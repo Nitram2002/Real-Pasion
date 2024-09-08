@@ -12,9 +12,9 @@
               VALUES('$usuario', '$email', '$contrasena_encriptada', '$nombre', '$apellido')";
 
     /* verificar que el correo no se repita*/
-    $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo = '$correo'");
+    $verificar_email = mysqli_query($conexion, "SELECT * FROM usuarios WHERE email = '$email'");
 
-    if (mysqli_num_rows($verificar_correo) > 0) {
+    if (mysqli_num_rows($verificar_email) > 0) {
         echo '
             <script>
                 alert ("Este correo ya esta registrado, intenta con otro diferente");
