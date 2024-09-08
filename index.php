@@ -1,3 +1,14 @@
+<?php
+	session_start(); // Inicia la sesión
+
+	// Verifica si el usuario ha iniciado sesión
+	if (isset($_SESSION['usuario'])) {  // Usamos 'usuario' en lugar de 'username'
+		$usuario = $_SESSION['usuario']; // El nombre de usuario desde la sesión
+	} else {
+		$usuario = null; // No hay usuario conectado
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,15 +109,18 @@
 								</div>
 								<div id="tg-addnavigationm-mobile" class="tg-addnavigationm-mobile collapse navbar-collapse">
 									<div class="tg-colhalf pull-right">
-										<nav class="tg-addnav">
-											<ul>
-												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-login">Acceso</a></li>
-												<li><a href="javascript().html" data-toggle="modal" data-target="#tg-register">Registrarse</a></li>
-												<li>
-													<a id="tg-btn-search" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-												</li>
-											</ul>
-										</nav>
+										<ul id="auth-buttons" style="<?php echo $username ? 'display:none;' : 'display:flex;'; ?>">
+											<li><a href="javascript().html" data-toggle="modal" data-target="#tg-login">Acceso</a></li>
+											<li><a href="javascript().html" data-toggle="modal" data-target="#tg-register">Registrarse</a></li>
+											<li>
+												<a id="tg-btn-search" href="javascript:void(0)"><i class="fa fa-search"></i></a>
+											</li>
+										</ul>
+									
+										<div id="user-info" style="<?php echo $username ? 'display:flex;' : 'display:none;'; ?>">
+											<li><span id="username-display"><?php echo htmlspecialchars($usuario); ?></span></li>
+											<li><a href="php/cerrar_sesion.php">Cerrar sesión</a></li>
+										</div>
 									</div>
 									<div class="tg-colhalf">
 										<ul class="tg-socialicons">

@@ -1,6 +1,6 @@
 <?php
     include 'conexion_be.php';
-
+    
     $nombre     = $_POST['nombre'];
     $apellido   = $_POST['apellido'];
     $usuario    = $_POST['usuario'];
@@ -8,6 +8,7 @@
     $contrasena = $_POST['contrasena'];
     $contrasena_encriptada = hash('sha512', $contrasena);
 
+    /* registro del usuario */
     $query = "INSERT INTO usuarios(usuario, email, contrasena, nombre, apellido)
               VALUES('$usuario', '$email', '$contrasena_encriptada', '$nombre', '$apellido')";
 
@@ -40,6 +41,7 @@
     $ejecutar = mysqli_query($conexion, $query);          
 
     if ($ejecutar) {
+
         echo '
             <script>
                 alert("Se ha registrado exitosamente");

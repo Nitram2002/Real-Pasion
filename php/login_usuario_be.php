@@ -2,8 +2,8 @@
     session_start();
     include 'conexion_be.php';
     
-    $usuario_email = $_POST['usuario/email'];
-    $contrasena    = $_POST['contrasena'];
+    $usuario_email         = $_POST['usuario/email'];
+    $contrasena            = $_POST['contrasena'];
     $contrasena_encriptada = hash('sha512', $contrasena);
 
     $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario = '$usuario_email' or email = '$usuario_email' and contrasena = '$contrasena_encriptada'");
@@ -16,6 +16,7 @@
                 window.history.back();
             </script>
         ';
+        $_SESSION['usuario'] = $usuario;
     } else {
         echo '
             <script>
